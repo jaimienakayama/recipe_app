@@ -61,13 +61,14 @@ input {
   height: 280px;
   padding: 5px;
   margin-bottom: 10px;
+  width: 280px;
 }
 
 .recipe-container {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  width: 295px;
+  width: 290px;
   margin: 20px 0px;
   transition: 0.3s all ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
