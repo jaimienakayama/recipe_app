@@ -5,6 +5,7 @@ const RecipeList = ({ recipes, setView, setRecipe }) => {
   const recipeOnClick = (recipe) => {
     setView("recipe");
     setRecipe(recipe);
+    window.scrollTo(0, 0);
   };
 
   return (

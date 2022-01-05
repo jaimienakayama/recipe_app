@@ -31,6 +31,7 @@ const App = () => {
     setRecipes([]);
     setIsLoading(true);
     setView("home");
+    window.scrollTo(0, 0);
     getRecipes(qs).then(({ data }) => {
       setRecipes(data);
       setIsLoading(false);
