@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500;600&family=JetBrains+Mono:wght@200;400;700&family=Luckiest+Guy&family=Roboto:wght@500;700;900&family=Sora:wght@500;800&display=swap");
+
+/* * {
+  border: 1px solid hotpink;
+} */
+
+body {
+  margin: 10px 70px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 72pt;
+  margin: 0px 0px 5px 0px;
+}
+
+.search-bar-banner {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar-container {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+input {
+  width: 500px;
+  border-radius: 20px;
+  border: 1px solid #d3d3d3;
+  padding: 0px 15px;
+  font-size: 12pt;
+  height: 20pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.recipe {
+  width: 600px;
+  height: 200px;
+}
+
+.thumbnail {
+  width: 280px;
+  height: 280px;
+  border-radius: 4px;
+}
+
+.thumbnail-container {
+  height: 280px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 295px;
+  margin: 20px 0px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.recipe-container:hover {
+  color: #ff0000;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.recipe-title {
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+  font-size: 18pt;
+  font-weight: 800;
+  width: 290px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipe-page-pic-container {
+  width: 381px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.recipe-page-pic {
+  width: 381px;
+  height: 381px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.components-container {
+  width: 381px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.instructions-container {
+  width: 711px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.recipe-page-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.right-column,
+.left-column {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.recipe-page-title {
+  font-family: "Sora", sans-serif;
+  font-size: 36pt;
+  font-weight: 800;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 50px 50px 50px;
+  text-shadow: 5px 5px 5px #cccccc;
+}
+
+.components-list {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.components-header {
+  text-transform: uppercase;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 12pt;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.instructions-list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.step {
+  margin: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.search-btn {
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
+  padding: 5px 15px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  transform: scale(1.2);
+  color: #ff0000;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+}
+
+.back-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
