@@ -6,6 +6,7 @@ import Search from "./Search.jsx";
 import Button from "./Button.jsx";
 import RecipeList from "./RecipeList.jsx";
 import RecipePage from "./RecipePage.jsx";
+import Loader from "react-loader-spinner";
 import { getRecipes } from "../src/utils/api.js";
 
 const App = () => {
@@ -13,10 +14,12 @@ const App = () => {
   const [recipes, setRecipes] = useState([]);
   const [recipe, setRecipe] = useState("");
   const [view, setView] = useState("home");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getRecipes(undefined, "desserts").then(({ data }) => {
       setRecipes(data);
+      setIsLoading(false);
     });
   }, []);
 
@@ -25,25 +28,36 @@ const App = () => {
   };
 
   const searchOnClick = (qs) => {
+    setRecipes([]);
+    setIsLoading(true);
+    setView("home");
     getRecipes(qs).then(({ data }) => {
       setRecipes(data);
-      setView("home");
+      setIsLoading(false);
     });
   };
 
   return (
     <div>
       <Header />
-      <div className="search-bar-banner">
-        <div className="search-bar-container">
-          <Search onChange={searchOnChange} />
-          <Button
-            btnClass="search-btn"
-            onClick={() => searchOnClick(search)}
-            text="Search"
-          />
-        </div>
+      <div className="search-bar-container">
+        <Search onChange={searchOnChange} />
+        <Button
+          btnClass="search-btn"
+          onClick={() => searchOnClick(search)}
+          text="Search"
+        />
       </div>
+      {isLoading && (
+        <Loader
+          className="loader"
+          type="Hearts"
+          color="#fe019a"
+          height={500}
+          width={500}
+          timeout="10000"
+        />
+      )}
       {view === "home" && (
         <RecipeList recipes={recipes} setView={setView} setRecipe={setRecipe} />
       )}
