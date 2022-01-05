@@ -27,6 +27,7 @@ header::before {
   left: 0px;
   opacity: 0.8;
   border-radius: 0 0 85% 85% / 30%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 h1 {
@@ -53,7 +54,7 @@ h1 {
   justify-content: flex-end;
   width: 100%;
   position: relative;
-  top: -31px;
+  top: -27px;
   left: 31px;
 }
 
@@ -87,6 +88,14 @@ input {
   width: 280px;
 }
 
+.large-font {
+  font-size: 18pt;
+}
+
+.medium-font {
+  font-size: 14pt;
+}
+
 .recipe-container {
   display: flex;
   flex-direction: column;
@@ -101,18 +110,20 @@ input {
   color: #fe019a;
   cursor: pointer;
   transform: scale(1.1);
+  filter: brightness(110%);
 }
 
 .recipe-title {
   text-transform: uppercase;
   font-family: "Sora", sans-serif;
-  font-size: 18pt;
   font-weight: 800;
   width: 290px;
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding-bottom: 10px;
 }
 
 .recipe-list {
