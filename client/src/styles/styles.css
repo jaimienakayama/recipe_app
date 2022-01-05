@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500;600&family=JetBrains+Mono:wght@200;400;700&family=Luckiest+Guy&family=Roboto:wght@500;700;900&family=Sora:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500;600&family=JetBrains+Mono:wght@200;400;700&family=Luckiest+Guy&family=Pacifico&family=Roboto:wght@500;700;900&family=Sora:wght@500;800&display=swap");
 
 /* * {
   border: 1px solid hotpink;
@@ -12,18 +12,44 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: url("https://imagizer.imageshack.com/v2/1600x1200q90/924/VA3hVv.jpg"); */
+  margin: 0;
+  width: 1527px;
+  left: -157px;
+  top: -48px;
+  position: relative;
+  height: 393px;
+  /* border-radius: 0 0 85% 85% / 30%; */
+}
+
+header::before {
+  content: "";
+  background-image: url("https://imagizer.imageshack.com/v2/1600x1200q90/924/VA3hVv.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+  border-radius: 0 0 85% 85% / 30%;
 }
 
 h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Pacifico", cursive;
   font-size: 72pt;
-  margin: 0px 0px 5px 0px;
-}
-
-.search-bar-banner {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+  color: #fe019a;
+  position: relative;
+  text-shadow: 5px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+    0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+    0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 4px #fff,
+    0 0 4px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+    0 0 5px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff,
+    0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff,
+    0 0 20px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 40px #fff, 0 0 40px #fff,
+    0 0 40px #fff, 0 0 80px #fff, 0 0 160px #fff, 0 0 320px #fff;
 }
 
 .search-bar-container {
@@ -31,7 +57,9 @@ h1 {
   gap: 5px;
   justify-content: flex-end;
   width: 100%;
-  padding-bottom: 20px;
+  position: relative;
+  top: -31px;
+  left: 31px;
 }
 
 input {
@@ -69,13 +97,13 @@ input {
   flex-direction: column;
   padding: 5px;
   width: 290px;
-  margin: 20px 0px;
+  margin: 20px 12px;
   transition: 0.3s all ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .recipe-container:hover {
-  color: #ff0000;
+  color: #fe019a;
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -89,12 +117,12 @@ input {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  align-items: center;
 }
 
 .recipe-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .recipe-page-pic-container {
@@ -225,7 +253,7 @@ button:hover {
 
 .back-btn:hover {
   transform: scale(1.2);
-  color: #ff0000;
+  color: #fe019a;
 }
 
 .search-btn:hover {
@@ -236,4 +264,9 @@ button:hover {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
 }
