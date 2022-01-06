@@ -28,7 +28,14 @@ const RecipePage = ({ recipe, setView }) => {
               </ul>
             </div>
             <div className="video-container">
-              {video && <iframe width="315" height="315" src={video}></iframe>}
+              {video && (
+                <iframe
+                  width="315"
+                  height="315"
+                  src={video}
+                  allowFullScreen
+                ></iframe>
+              )}
             </div>
           </div>
         </div>
