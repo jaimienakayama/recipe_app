@@ -59,7 +59,7 @@ const App = () => {
           timeout="10000"
         />
       )}
-      {view === "home" && (
+      {view === "home" && !isLoading && (
         <RecipeList recipes={recipes} setView={setView} setRecipe={setRecipe} />
       )}
       {view === "recipe" && <RecipePage recipe={recipe} setView={setView} />}
