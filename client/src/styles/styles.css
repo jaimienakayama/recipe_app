@@ -61,7 +61,7 @@ h1 {
 input {
   width: 500px;
   border-radius: 20px;
-  border: 1px solid #d3d3d3;
+  border: 0px;
   padding: 0px 15px;
   font-size: 12pt;
   height: 20pt;
