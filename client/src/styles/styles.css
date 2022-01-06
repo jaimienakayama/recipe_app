@@ -32,7 +32,7 @@ header::before {
 
 h1 {
   font-family: "Pacifico", cursive;
-  font-size: 72pt;
+  font-size: 90pt;
   color: #fe019a;
   position: relative;
   left: 42px;
@@ -50,7 +50,7 @@ h1 {
 
 .search-bar-container {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   justify-content: flex-end;
   width: 100%;
   position: relative;
@@ -257,22 +257,39 @@ button:hover {
   transition: 0.3s;
 }
 
+.btn:hover,
+.search-btn:hover,
 .back-btn:hover {
   transform: scale(1.2);
-  color: #fe019a;
-}
-
-.search-btn:hover {
-  transform: scale(1.1);
 }
 
 .back-btn-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+  height: 77px;
+  margin: 10px;
   width: 100%;
 }
 
 .loader {
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.btn {
+  border: 0px;
+  background-color: transparent;
+  transition: 0.3s all ease-in-out;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
 }
