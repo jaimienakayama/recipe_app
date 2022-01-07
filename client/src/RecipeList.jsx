@@ -30,7 +30,6 @@ const RecipeList = ({ recipes, setView, setRecipe }) => {
     setMax(16);
   };
 
-  console.log(max);
   return (
     <>
       <div className="recipe-list">
@@ -39,6 +38,7 @@ const RecipeList = ({ recipes, setView, setRecipe }) => {
             const { name, url, components } = r;
             return (
               <Recipe
+                key={name}
                 name={name}
                 url={url}
                 components={components}
