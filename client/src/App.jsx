@@ -56,7 +56,7 @@ const App = () => {
           color="#fe019a"
           height={500}
           width={500}
-          timeout="10000"
+          timeout={10000}
         />
       )}
       {view === "home" && !isLoading && (
